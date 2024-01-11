@@ -17,7 +17,7 @@ export default function App() {
         <SvgTop />
       </View> 
       <View style={styles.container}> 
-        <Text style={styles.titulo}>Hello!</Text>
+        <Text style={styles.titulo}>Hello</Text>
         <Text style={styles.subTitle}>Sing in to your account</Text>
         <TextInput style={styles.input} placeholder='test@hotmail.com' />
         <TextInput style={styles.input} placeholder='password' secureTextEntry={true}/>
