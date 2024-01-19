@@ -1,10 +1,13 @@
 import { StyleSheet, Text, View, TextInput, Dimensions, TouchableOpacity } from 'react-native';
 import * as React from "react";
 import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native';
 
 export default function ButtonGradient(){
+    const navigation = useNavigation();
+
    return (
-      <TouchableOpacity style={styles.container}>
+      <TouchableOpacity style={styles.container} onPress={() => navigation.navigate("MyTabs")}>
         <LinearGradient
             colors={['#FFB677', '#ff3cbd']}
             start={{x: 0, y: 0}}
